@@ -1,22 +1,20 @@
 # framp.me
 
-## understanding Monads (..Maybe)
+## understanding Monads
 
 ---
 
 # disclaimer
 ### we're going to:
 ## 1. gloss on some implementation details
-## 2. keep it in layman's terms (good luck with that)
+## 2. keep it in layman's terms
 ## 3. refer to [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land) (kinda)
-## 4. not kidding, it's the real name!
 
 https://github.com/fantasyland/fantasy-land
 
 ---
 
 # Algebra
-![coolmath](https://s-media-cache-ak0.pinimg.com/564x/d9/9b/b4/d99bb4e16b890abdbc025bc876d1d779.jpg)
 
 ---
 
@@ -40,8 +38,6 @@ assert(Container(5).value, 5) // Noice!
 ---
 
 # Setoid
-![steroid](https://s-media-cache-ak0.pinimg.com/736x/02/6f/9b/026f9b8ff352f86903ddff0929aaa143.jpg)
-pretty sure this guy never used Setoids
 
 ---
 
@@ -62,7 +58,6 @@ assert(List([1,2,3]).equals(List([1,2,42])) === false)
 ---
 
 # Semigroup
-![concat](http://forum.videohelp.com/attachments/29972-1422738175/concatenate.jpg)
 
 ---
 
@@ -84,8 +79,6 @@ assert.deepEqual(
 ---
 
 # Monoid
-
-![name](https://s16.postimg.org/xeykr9iqt/Cf_BDg_Pm_UIAAtd_L.jpg)
 
 ---
 
@@ -110,7 +103,6 @@ assert.deepEqual(
 ---
 
 # Functor
-![functor](https://buzzdecafe.github.io/assets/img/cat2cat.png)
 
 ---
 
@@ -150,8 +142,6 @@ assert(
 
 # Maybe
 
-![cat](http://i2.kym-cdn.com/photos/images/facebook/000/346/666/d0e.jpg)
-
 ---
 
 ### Maybe Functor
@@ -178,7 +168,6 @@ assert(Maybe(null).map(a => a*3).value === null)
 ---
 
 # Apply / Applicative
-![lift](http://s2.quickmeme.com/img/a2/a27b46227cbd5ce9c6c37885a5df4a14ca326ea459c936f0c41b848d89d0d128.jpg)
 
 ---
 
@@ -265,8 +254,6 @@ const sam = find(selector('sam'))(accounts)
 ---
 
 # Chain
-![tchain](http://i.dailymail.co.uk/i/pix/2009/05/12/article-1180911-004796B400000258-960_468x324.jpg)
-
 
 ---
 
@@ -294,7 +281,6 @@ assert(Container("WAT")
 ---
 
 # Monad
-![omg](https://s-media-cache-ak0.pinimg.com/originals/c9/60/e1/c960e18c44d3f0fff5e033b9943a8ef0.jpg)
 
 ---
 
@@ -324,11 +310,6 @@ Container.of = (a) => Container(a)
 # Fantasy Land Algebras Dependencies
 
 ![map](https://github.com/fantasyland/fantasy-land/raw/master/figures/dependencies.png)
-
----
-
-# call me Maybe?
-![maybe](http://data.whicdn.com/images/88277350/large.jpg)
 
 ---
 
@@ -378,8 +359,6 @@ const sam = find(selector('sam'))(accounts)
 ---
 
 # Monadic Promises
-
-![promises](http://www.effectiveui.com/blog/wp-content/uploads/2014/11/Promise.jpg)
 
 ---
 
